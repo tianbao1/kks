@@ -6,7 +6,7 @@ program.version('1.1.0', '-v, --version')
     .command('init <name>')
     .action((name) => {
         console.log('clone template ...');
-        process1.exec('git clone (git 下载地址) ' + name, function(error, stdout, stderr) {
+        process1.exec('https://github.com/tianbao1/kks.git' + name, function(error, stdout, stderr) {
             if (error !== null) {
                 console.log('exec error: ' + error);
                 return;
